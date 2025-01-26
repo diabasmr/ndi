@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/customizable.css">
+    <title>Personnaliser</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Personnalisation des cookies</h1>
+        <p>Veuillez configurer vos préférences. Nous ne faciliterons pas la tâche.</p>
+    
+        <div id="step1" class="step active">
+          <h2>Choisissez une catégorie de cookies à personnaliser :</h2>
+          <button onclick="nextStep('step2')">Cookies essentiels</button>
+          <button onclick="nextStep('step3')">Cookies marketing</button>
+          <button onclick="nextStep('step4')">Cookies inutiles</button>
+        </div>
+    
+        <div id="step2" class="step">
+          <h2>Personnalisation des cookies essentiels</h2>
+          <p>(Spoiler : Vous n’avez pas vraiment de choix ici.)</p>
+          <form>
+            <label>
+              <input type="checkbox" checked disabled>
+              Autoriser tous les cookies
+            </label><br>
+            <label>
+              <input type="checkbox" checked disabled>
+              Activer les publicités intrusives
+            </label><br>
+            <button type="button" onclick="fakeError()">Enregistrer</button>
+          </form>
+        </div>
+    
+        <div id="step3" class="step">
+          <h2>Paramètres avancés : Cookies marketing</h2>
+          <p>Cliquez sur une sous-catégorie (bon courage).</p>
+          <div id="infinite-menu"></div>
+          <button onclick="resetSteps()">Retour au début</button>
+        </div>
+    
+        <div id="step4" class="step">
+          <h2>Paramètres des cookies inutiles</h2>
+          <div class="scroll-box">
+            <p>Cookies inutiles, mais nécessaires pour notre plaisir.</p>
+            <p>Répétez ces réglages pour toujours.</p>
+            <p>Encore des réglages inutiles...</p>
+            <p>Félicitations, vous avez scrolé pour rien !</p>
+            <p>Cookies inutiles, mais nécessaires pour notre plaisir.</p>
+            <p>Répétez ces réglages pour toujours.</p>
+            <p>Encore des réglages inutiles...</p>
+            <p>Félicitations, vous avez scrolé pour rien !</p>
+          </div>
+          <button onclick="resetSteps()">Retour au début</button>
+        </div>
+      </div>
+    <script src="../JS/customizable.js"></script>
+    
+</body>
+</html>

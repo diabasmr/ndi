@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+  
+.popup {
+    background: white;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s;
+}
+  
+.popup h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+  
+.popup p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+  
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+  
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s;
+}
+  
+button:hover {
+    transform: scale(1.1);
+}
+  
+#accept {
+    background: green;
+    color: white;
+}
+  
+#customize {
+    background: orange;
+    color: white;
+}
+  
+#refuse {
+    background: red;
+    color: white;
+    position: relative; 
+}
+
+#refuseMessage {
+    position: absolute;
+    top: 70%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    display: none; 
+    z-index: 1000;
+}
+  
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+}
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+}
+
+.shake {
+    animation: shake-animation 0.900s ease-in-out;
+}
+  
+@keyframes shake-animation {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.boom-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 1000;  
+}
+  
+#boomGif {
+    width: 300px;  
+    animation: boomEffect 5s forwards;
+}
+  
+  
+@keyframes boomEffect {
+    0% {
+      transform: scale(0); 
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.5); 
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1); 
+      opacity: 0; 
+    }
+}
+  
+  
+  
