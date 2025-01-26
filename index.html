@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./quizz-test/IMAGES/logo-mozza.png">
+    <title>Quiz - Meaux-zzarella</title>
+    <link href="./quizz-test/CSS/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav><a href="#"><img src="./quizz-test/IMAGES/logo-equipe2.png" id="Meaux-zzarella"></a>
+        <ul>
+            <li><a href="../BadUIChallenge/index/HTML/index.html">La pire interface</a></li>
+            <li><a href="../cliquer/HTML/index.html">Cookie cauchemar</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <header>
+            <img src="./quizz-test/IMAGES/logo-equipe.png" id="equipe">
+            <h4>Un site pour:</h4>
+            <img src="./quizz-test/IMAGES/raceforwater-logo.png" alt="Race for Water" id="logo">
+        </header>
+
+        <div id="startPage">
+            <h1>Bienvenue dans le Quiz Meaux-zzarella</h1>
+            <article class="presentation"> Luttez contre le réchauffement climatique en répondant avec précision aux questions. <strong>N'innondez pas votre ville!</strong></article>
+            <button id="startButton">Commencer le quiz</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("startButton").addEventListener("click", function() {
+            window.location.href = "./quizz-test/HTML/quizz.html";
+        });
+    </script>
+    
+</body>
+</html>
