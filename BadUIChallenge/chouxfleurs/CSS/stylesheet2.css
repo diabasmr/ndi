@@ -1,0 +1,143 @@
+* {
+    margin: 1em;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Comic Sans MS', sans-serif;
+    color: purple;
+    font-size: 50px;
+}
+
+.barrenav {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+.barrenav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.barrenav li {
+    display: inline-block;
+    transition: all 0.5s ease-in-out;
+}
+
+.barrenav a {
+    color: rgb(246, 239, 239);
+    letter-spacing:0em;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px rgb(255, 255, 255);
+}
+
+.barrenav a:hover {
+    color: yellow;
+    background-color: black;
+    transform: rotate(360deg) scale(1.5);
+}
+
+.barrenav a:active {
+    color: rgb(180, 180, 180);
+    background-color: rgb(221, 255, 0);
+    text-shadow: 5px 5px 20px blue;
+}
+
+.barrenav li:hover {
+    background-color: rgb(255, 255, 255);
+    font-size: 70px;
+    transform: rotate(180deg);
+}
+
+.active {
+    background-color: #ffffff; 
+}
+/*ZONETEXTE*/
+
+.box {    
+    animation: shake 0.1s;    
+    animation-iteration-count: infinite;
+    display: flex;
+    max-width: 1600px;
+    width: 90%;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    border-radius: 2em;
+    margin: 0.5em;
+    margin-top: 6em;
+}
+
+.box p{
+    font-family: "Source Code Pro", monospace;
+}
+
+.intro{
+    word-spacing: 0px;
+    letter-spacing: 2mm  ;
+    background-color: #ffffff;
+    color: rgb(255, 221, 221);
+    font-family: "Source Code Pro", monospace;
+    }
+
+/*ZONETEXTE*/
+/*FOOTER*/
+
+.footernoir {
+    margin-top:20%;
+    margin-left: 1%;
+    padding: 15px;
+    color:#e1e1e1;
+    background-color:#fff7f7;
+    border-radius: 24%;
+}
+
+.credit{
+    text-align: right;
+}
+
+.cookie{
+    word-spacing: 3em;
+    letter-spacing: -5px;
+    text-align: left;
+    line-height: 15px;
+}
+
+
+.logo2 img{   
+    animation: shake 0.5s;    
+    animation-iteration-count: infinite;}
+
+/*FOOTER FIN*/
+
+
+
+.source-code-pro-google {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@keyframes shake {  
+0% { transform: translate(1px, 1px) rotate(0deg); }  
+10% { transform: translate(-1px, -2px) rotate(-1deg); } 
+20% { transform: translate(-3px, 0px) rotate(1deg); }  
+30% { transform: translate(3px, 2px) rotate(0deg); }  
+40% { transform: translate(1px, -1px) rotate(1deg); }  
+50% { transform: translate(-1px, 2px) rotate(-1deg); }  
+60% { transform: translate(-3px, 1px) rotate(0deg); } 
+70% { transform: translate(3px, 1px) rotate(-1deg); }  
+80% { transform: translate(-1px, -1px) rotate(1deg); }  
+90% { transform: translate(1px, 2px) rotate(0deg); }  
+100% { transform: translate(1px, -2px) rotate(-1deg); }}
